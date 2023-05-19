@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+:root {
+  --background: linear-gradient(62deg, #5a5aff 13%, rgba(255, 5, 59, 0.5) 4%),
+  linear-gradient(44deg, rgba(0, 96, 199, 0.07922090238615942) 39%, rgba(244, 35, 42, 0.5) 18%),
+  linear-gradient(118deg, rgba(61, 175, 211, 0.03152997265339608) 40%, rgba(255, 0, 89, 0.5) 54%),
+  linear-gradient(58deg, rgba(115, 115, 255, 0.16144443572260592) 83%, rgba(241, 32, 0, 0.5) 23%);
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("/public/assets/background.jpg"); 
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #191933;
+}
+
+::-webkit-scrollbar-track {
+	background: unset;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: rgba(220, 215, 215, 0.952);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #fff;
+}
+
+
+/* Reset Css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }

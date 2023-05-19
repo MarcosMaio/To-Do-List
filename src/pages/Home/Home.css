@@ -1,0 +1,29 @@
+.divisão {
+        width: 30%;
+        position: relative;
+        box-sizing: border-box; 
+        height: auto;
+        margin: 8.7em auto;
+        padding-top: 1em;
+        padding-bottom: 8em;
+        background-image: linear-gradient(90deg, transparent 40px, #494a4b 40px, #494a4b 42px, transparent 42px), linear-gradient(#EEEEEE .1em, transparent .1em);
+        background-size: 100% 1.2em;
+        
+}
+
+
+@media screen and (max-width: 1200px) {
+    .divisão {
+      width: 70%; 
+      max-width: 400px;
+      
+    }  
+  }
+
+  @media screen and (max-width: 480px) {
+    .divisão {
+      width: 95%; 
+      max-width: 500px;
+      
+    }  
+  }

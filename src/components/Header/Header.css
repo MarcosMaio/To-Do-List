@@ -1,0 +1,20 @@
+.titulo {
+    width: fit-content;
+    font-size: 25px;
+    line-height: 32px;
+    color: #494a4b;
+    text-transform: uppercase;
+    font-family: 'Architects Daughter', cursive;
+    transform: rotate(5deg);
+    border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+    background-color: #eae8e8;
+    margin-bottom: 1em;
+    margin-left: 1em
+}
+
+@media screen and (max-width: 1200px) {
+    .titulo {
+        width: 50%;
+        margin: 0 auto;
+    }
+  }

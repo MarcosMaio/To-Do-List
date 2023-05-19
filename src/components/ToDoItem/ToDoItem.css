@@ -1,0 +1,41 @@
+.containerList {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.containerList:hover {
+    cursor: pointer;
+    scale: 1.05;
+    transform: matrix(1, 0, 0, 1, 0, -2);
+}
+
+.trashIcon {
+    width: 20px;
+}
+
+.ListGroupItem {
+    width: 98%;
+    margin-bottom: 0.5em;
+    height: auto;
+    color: #494a4b;
+    margin-top: 0.5em;
+    margin-left: 1.5em;
+    word-break: break-all;
+}
+
+@media screen and (max-width: 1200px) {
+    .ListGroupItem {
+        margin: 0.5em 2em;
+        max-width: 330px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
+
+  @media screen and (max-width: 400px) { 
+    .ListGroupItem { 
+        width: 90%;
+        margin: 0.5em 2.3em;
+    }
+  }
