@@ -1,15 +1,14 @@
-# Aplicação Web - To-Do List <br>
-## Esta é uma aplicação web de um To-Do List responsivo, com um design bonito e agradável. O objetivo desta aplicação é permitir que os usuários adicionem, editem e excluam tarefas, além de marcar as tarefas como concluídas. <br>
+# Web Application - To-Do List <br>
+## This is a responsive web application for a To-Do List, with a beautiful and pleasant design. The purpose of this application is to allow users to add, edit, and delete tasks, as well as mark tasks as completed. <br>
 
-## Funcionalidades <br>
-### A aplicação oferece as seguintes funcionalidades: <br>
+## Features <br>
+### The application offers the following features: <br>
 
-##### Adicionar Tarefa: O usuário pode adicionar uma nova tarefa à lista, informando o objetivo da tarefa desejada. <br>
-##### Editar Tarefa: O usuário pode editar uma tarefa existente clicando nela. Uma dialog animada será exibida, permitindo que o usuário faça alterações na descrição  da tarefa. <br>
-##### Excluir Tarefa: O usuário pode excluir uma tarefa da lista clicando no ícone de lixeira correspondente à tarefa. <br>
-##### Marcar Tarefa como Concluída: O usuário pode marcar uma tarefa como concluída clicando na caixa de seleção ao lado da tarefa. Isso ativará uma animação que altera a aparência da tarefa para indicar que ela foi concluída. <br>
-##### Responsivo: O design da aplicação se adapta automaticamente a diferentes dispositivos, permitindo que os usuários acessem e utilizem a aplicação em seus 
-dispositivos móveis, tablets e desktops. <br>
+##### Add Task: Users can add a new task to the list by providing the desired task objective.. <br>
+##### Edit Task: Users can edit an existing task by clicking on it. An animated dialog will appear, allowing users to make changes to the task description. <br>
+##### Delete Task: Users can delete a task from the list by clicking on the corresponding trash icon. <br>
+##### Mark Task as Completed: Users can mark a task as completed by clicking on the checkbox next to the task. This will activate an animation that changes the appearance of the task to indicate that it has been completed. <br>
+##### Responsive Design: The application's design automatically adapts to different devices, allowing users to access and use the application on their mobile devices, tablets, and desktops. <br>
 
-### Conclusão <br>
-##### A aplicação To-Do List é uma ferramenta prática e elegante para gerenciar tarefas diárias. Com seu design responsivo, os usuários podem acessar a aplicação em qualquer dispositivo e desfrutar de uma experiência consistente. Experimente agora mesmo e mantenha suas tarefas organizadas de forma simples e eficiente!
+### Conclusion <br>
+##### The To-Do List application is a practical and elegant tool for managing daily tasks. With its responsive design, users can access the application on any device and enjoy a consistent experience. Try it now and keep your tasks organized in a simple and efficient way!
