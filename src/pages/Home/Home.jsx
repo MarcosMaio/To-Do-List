@@ -13,7 +13,7 @@ export default function Home() {
     { 
         name:"Create a To-Do List (:",
         id: 1,
-        checked: true
+        checked: true,
     },
     {
         name: "Learn a new code language",
@@ -22,19 +22,22 @@ export default function Home() {
     {
         name: "Pratic coding skils",
         id: 3,
+    
     }
 ]);
+
+    const [deleteIconAnimation, setDeleteIconAnimation] = useState(false) 
 
     
     const addToDo = (toDo) => { //const responsavel por adicionar um novo item ToDo a lista.
         setToDos([...toDos, toDo]); //aqui estou pegando o estado atual do setToDos clonando esses itens em um novo array e adicionando o ToDo
 }
-    const deleteToDo = (id) => { //const responsavel por remover o toDo do array
-        const filtraId = toDos.filter((toDo) => toDo.id !== id);  //const responsavel por filtrar o array toDos e devolver um novo array que passar pela condição, a condição é que o id do objeto toDo seja diferente do id passado como parâmetro para a função deleteToDo. Isso significa que a nova array filtraId terá todos os objetos toDo que não possuem o id correspondente.
-        setToDos(filtraId); //depois devolve o novoArray ao setTodos.
-}
-
-const editingToDo = (id, editedText) => { //const responsavel por editar uma tarefa criada, ela recebe dois parametros o id da tarefa na qual quer ser editada e o texto editado passado por parametro pelo componente editToDoItem.
+    const deleteToDo = (id) => {
+        const filtraId = toDos.filter((toDo) => toDo.id !== id);
+        setToDos(filtraId);
+    }
+  
+    const editingToDo = (id, editedText) => { //const responsavel por editar uma tarefa criada, ela recebe dois parametros o id da tarefa na qual quer ser editada e o texto editado passado por parametro pelo componente editToDoItem.
         var newToDosArray = [...toDos]; // cria uma cópia do array de tarefas existente chamado toDos usando o operador spread (...).
         for (var i in newToDosArray){ //a função usa um loop for..in para percorrer o array newToDosArray.
             if(newToDosArray[i].id === id) { //e encontrar a tarefa com o id fornecido.
@@ -53,6 +56,8 @@ const editingToDo = (id, editedText) => { //const responsavel por editar uma tar
                     <Form addToDo={addToDo} />
                         {toDos.map((toDo , key) => ( 
                             <ToDoItem 
+                            deleteIconAnimation={deleteIconAnimation}
+                            setDeleteIconAnimation={setDeleteIconAnimation}
                             editingToDo={editingToDo} 
                             deleteToDo={deleteToDo} 
                             toDo={toDo} 

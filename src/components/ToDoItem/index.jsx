@@ -4,7 +4,7 @@ import './ToDoItem.css'
 import trash from './borracha-dupla-face.png'
 import EditToDoItem from 'components/EditToDoItem'
 
-export default function ToDoItem({ toDo, deleteToDo, editingToDo }) {
+export default function ToDoItem({ toDo, deleteToDo, editingToDo, deleteIconAnimation ,setDeleteIconAnimation }) {
   const [taskCompleted, setTaskCompleted] = useState(false)
   const isChecked = toDo.checked || taskCompleted;
 
@@ -16,12 +16,14 @@ export default function ToDoItem({ toDo, deleteToDo, editingToDo }) {
           style={{
             borderColor: "#ffffff",
             backgroundColor:"#e8e5e5",
+            
           }}
         >
           <div
             style={{
               display: "flex",
               alignItems: "center",
+              
             }}
           >
             <input
@@ -38,6 +40,7 @@ export default function ToDoItem({ toDo, deleteToDo, editingToDo }) {
                 }}
                 onClick={() => {
                   setTaskCompleted(!taskCompleted)
+                  
                 }}
             />
             <span style={{ 
